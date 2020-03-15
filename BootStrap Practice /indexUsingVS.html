@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <div class="container">
+        <h1 class="text-primary"> I am an H1</h1>
+        <h1 class="text-successs"> I am an H1</h1>
+        <h5 class="border border-warning border-left-0">Border</h5>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/ .min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+
+      <button class="btn btn-info p-0">Padding 0</button>
+      <button class="btn btn-info p-1">Padding 0</button>
+      <button class="btn btn-info p-2">Padding 0</button>
+      <button class="btn btn-info p-3">Padding 0</button>
+      <button class="btn btn-info p-4">Padding 0</button>
+      <button class="btn btn-info p-5">Padding 0</button>
+
+      <button class="btn btn-warning p-xl-5 p-l-4">ONLY on XL</button>
+
+      <h1 class="d-xl-none">Hide me on XL</h1>
+<!--  
+      // Responsive breakpoints
+
+  
+      // Extra small devices (portrait phones, less than 576px)
+      // No media query for `xs` since this is the default in Bootstrap
+      
+      // Small devices (landscape phones, 576px and up)
+      @media (min-width: 576px) { ... }
+      
+      // Medium devices (tablets, 768px and up)
+      @media (min-width: 768px) { ... }
+      
+      // Large devices (desktops, 992px and up)
+      @media (min-width: 992px) { ... }
+      
+      // Extra large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) { ... }
+
+      Bootstrap 4 has similar nav but we can control where it changes to hamburger menu (at small, medium, large, xs)
+      - Required to state the breakpoint
+
+
+      Flexbox:
+      - exists outside of bootstrap (but part of Bootstrap 4)
+        - very easy to use with Boostrap 4
+      - includes a bunch of CSS properities inside a page/container
+      - Utilities > Flex (very powerful)
+      - Flexbox starts from left to right, top to bottom
+        - can change flex direction to be reveresed
+      - default value = justify-content (left)
+      - can do justify-content-left/center
+      - can do justify-content-between (provides equal amount of spacing between items in div)
+      - justify-content-around (space between and around items (start and end items have space too))
+      Align items
+      - default is 
+-->  
+<div class="border border-dark d-flex justify-content-around align-items-center" style="height: 200px">
+<button class="btn btn-lg">SMALL</button>
+<button class="btn btn-lg">SMALL</button>
+
+</div> 
+  
+
+<nav class="nav">
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+</nav>
+
+
+<div class="container">
+  <div class="row border border-danger">
+    <h3 class="col-6">HALF</h3>
+    <h3 class="col-6">HALF 2</h3>
+
+  </div>
+</div>
+
+
+<div class="class row"></div>
+
+</body>
+</html>
+
+
+
+<!-- 
+    Bootstarp 4 has more text colours ==> warning, primary, succes, light 
+    (more classes for colour)
+    Typography:
+    - blockquotes have classes now (don't need to overwrite styles anymore)
+     mb == margin bottom (class="mb-0")
+     <footer class="blockquote-footer"></footer>
+
+    Font units is a big change in Bootstrap 4
+    - Use REM (root EMs) as CSS unit
+    -   1 REM = 16 pixel
+
+
+    Flexbox
+    - flex-row-reverse == goes from right to left now
+    - note d-flex justify-content-start align-items-end has item on the bottom and (left as start)
+    but with  flex-row-reverse it is at the right-most bottom
+    - if justify-content-end exists with flex-row-reverse then the items are at the left-most bottom
+    as the items are shited to the left (as that's the end for the box when row is reveresed so contents align at the end)
+    
+    Flex-column
+    - takes up whole column
+    - flex-column justify-content-center align-items-start (centered, at the start)
+    = flex-column-reverse: go from bottom to top NOT top to bottom (end becomes top now and start is bottom)
+    - align-self == one item aligned to top, center, or bottom
+
+    How to make things responsive with Flexbox?
+    - 6 buttons in a row when screen is small look bad
+    - need to stack them vertically w/ space
+      - for space do: justify-content-between 
+      - stack at small size
+        - flex-coloum flex-md-row (@ medium they are stacked in rows) 
+
+    - 
+        
+      
+
+-->
